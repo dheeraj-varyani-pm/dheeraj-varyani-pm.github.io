@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj Varyani | Product Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+        }
+
+        .header-text .title {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .header-text .summary {
+            font-size: 0.95rem;
+            color: #444;
+            max-width: 550px;
+        }
+
+        .contact-links {
+            margin-top: 16px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            font-size: 0.85rem;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1px;
+            transition: border-color 0.2s;
+        }
+
+        .contact-links a:hover {
+            border-color: #1a1a1a;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #888;
+            margin-bottom: 24px;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 32px;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .exp-header h3 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .exp-header .dates {
+            font-size: 0.85rem;
+            color: #888;
+            white-space: nowrap;
+        }
+
+        .exp-company {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .exp-bullets {
+            list-style: none;
+            padding: 0;
+        }
+
+        .exp-bullets li {
+            font-size: 0.88rem;
+            color: #333;
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 6px;
+        }
+
+        .exp-bullets li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 5px;
+            height: 5px;
+            background: #ccc;
+            border-radius: 50%;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 16px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .edu-header h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .edu-header .dates {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .edu-degree {
+            font-size: 0.88rem;
+            color: #555;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            font-size: 0.82rem;
+            padding: 6px 14px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 24px;
+            }
+
+            .contact-links {
+                justify-content: center;
+            }
+
+            .exp-header {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .edu-header {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            header {
+                padding: 40px 0 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="photo.png" alt="Dheeraj Varyani" class="photo">
+                <div class="header-text">
+                    <h1>Dheeraj Varyani</h1>
+                    <p class="title">Product Manager | Regulatory Technology @ Booking Holdings</p>
+                    <p class="summary">8+ years across B2C & B2B internet companies in Travel, SaaS, Fintech & E-commerce. Combining a software engineering foundation with product leadership to build scalable, compliant, and user-centric products.</p>
+                    <div class="contact-links">
+                        <a href="mailto:dheeraj.varyani@booking.com">dheeraj.varyani@booking.com</a>
+                        <a href="tel:+919899120676">+91-9899120676</a>
+                        <a href="https://www.linkedin.com/in/dheerajvaryani/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Product Manager &mdash; Trips RegTech</h3>
+                    <span class="dates">May 2024 &ndash; Present</span>
+                </div>
+                <p class="exp-company">Booking Holdings &middot; World's leader in online travel</p>
+                <ul class="exp-bullets">
+                    <li>Led development and launch of Data Portability API for Digital Markets Act (DMA) compliance, enabling millions of EEA users to securely export their personal data</li>
+                    <li>Built & scaled Legal Notification Service powering dynamic compliance banners across Trips BU, reducing roll-out time by 75%</li>
+                    <li>Enabled unified data privacy requests across ABU & BTL by building GDPR connectors, reducing manual work and accelerating response times</li>
+                    <li>Formulated roadmap for supplier compliance charter & new products to maintain regulatory compliance</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Senior Product Manager</h3>
+                    <span class="dates">Aug 2021 &ndash; May 2024</span>
+                </div>
+                <p class="exp-company">Tekion &middot; B2B SaaS automotive cloud platform (valued at $3.5B)</p>
+                <ul class="exp-bullets">
+                    <li>Formulated roadmap for wholesale charter focused on improving user experience and enhancing critical user journeys</li>
+                    <li>Revamped legacy invoicing & inventory management with new workflows improving user efficiency by 22%</li>
+                    <li>Scaled the legacy product from 300 clients to 1,000+ in 2 years by identifying and resolving go-live blockers</li>
+                    <li>Built exchange workflow for parts, streamlining processes and delivering cost & refund time savings</li>
+                    <li>Designed & developed E-picklist module for real-time paperless parts tracking, saving $2,000/dealership annually</li>
+                    <li>Built wholesale portal (B2B2C) reducing manual efforts and increasing transparency for users</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Product Manager &mdash; Flights</h3>
+                    <span class="dates">Jul 2020 &ndash; Aug 2021</span>
+                </div>
+                <p class="exp-company">MakeMyTrip &middot; India's largest OTA (NASDAQ listed)</p>
+                <ul class="exp-bullets">
+                    <li>Conceptualized & built 'Scheduled Web Check-in' flow resulting in 2x improvement of checked-in passenger % in 90 days</li>
+                    <li>Reduced 50% of customer calls under 'Travel Related Enquiry' by proactively informing customers about schedule changes</li>
+                    <li>Enhanced claim refund flow, driving down agent count by 20% for the refund queue</li>
+                    <li>Awarded 'Go Tripper Of The Month' for contributions to flight user experience</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Lead Software Engineer</h3>
+                    <span class="dates">Apr 2016 &ndash; May 2018</span>
+                </div>
+                <p class="exp-company">Freecharge &middot; Fintech platform (valued at $400M)</p>
+                <ul class="exp-bullets">
+                    <li>Led a team of 3 engineers to develop & scale merchant-facing and consumer-facing products from scratch</li>
+                    <li>Developed merchant panel enabling transaction views, settlement reports & refund initiation</li>
+                    <li>Owned transaction history system (passbook equivalent) serving 30+ million users</li>
+                    <li>Automated merchant onboarding journey for 1 Lac+ smaller businesses</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Application Engineer</h3>
+                    <span class="dates">Dec 2014 &ndash; Mar 2016</span>
+                </div>
+                <p class="exp-company">Snapdeal &middot; E-commerce (peak valuation $6.5B)</p>
+                <ul class="exp-bullets">
+                    <li>Developed fraud detection script blocking bulk fraud orders, saving ~5 Cr in a month</li>
+                    <li>Improved seller conduct monitoring through sales velocity algorithm</li>
+                    <li>Built pricing simulator to regulate platform prices via competitor price scraping</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="edu-header">
+                    <h3>Management Development Institute, Gurgaon</h3>
+                    <span class="dates">Jun 2018 &ndash; Mar 2020</span>
+                </div>
+                <p class="edu-degree">Master of Business Administration</p>
+            </div>
+            <div class="education-item">
+                <div class="edu-header">
+                    <h3>Uttar Pradesh Technical University</h3>
+                    <span class="dates">Jun 2010 &ndash; May 2014</span>
+                </div>
+                <p class="edu-degree">B.Tech in Computer Science</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Domains & Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Product Strategy</span>
+                <span class="skill-tag">Regulatory Compliance</span>
+                <span class="skill-tag">B2B SaaS</span>
+                <span class="skill-tag">Travel Tech</span>
+                <span class="skill-tag">Fintech</span>
+                <span class="skill-tag">E-commerce</span>
+                <span class="skill-tag">Data Privacy (GDPR/DMA)</span>
+                <span class="skill-tag">Roadmap Planning</span>
+                <span class="skill-tag">Cross-functional Leadership</span>
+                <span class="skill-tag">Software Engineering</span>
+                <span class="skill-tag">SQL & NoSQL</span>
+                <span class="skill-tag">Stakeholder Management</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
